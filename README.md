@@ -1,1 +1,1 @@
-# Transformer-Load-Prediction-and-comparision-of-Linear-regression-and-LSTM
+# Electric Load Forecasting using Linear Regression and LSTM
