@@ -32,26 +32,31 @@ Variables in the dataset
 
 The load is calculated from:
 
-Voltage (V)
+1. Voltage (V)
 
-Current (I)
+2. Current (I)
 
-Power factor (pf)
+3. Power factor (pf)
 
 Additional features:
 
-Active power load (kW)
+1. Power load (kW)
 
-Temperature
+2. Temperature
 
-Humidity
+3. Humidity
 
-Weekday / Weekend
+4. Weekday / Weekend
 
-Season (winter, summer, rainy)
+5. Season (winter, summer, rainy)
 
 After data cleaning, the following features were used :
 
 1. Temprature
-2. Date and Time
-3. 
+2. Humidity
+3. Hour
+4. Date and Time
+5. Day of week
+6. Month
+7. Load
+
