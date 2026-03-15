@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Converted from IPYNB to PY
-"""
 
 # %% [markdown] Cell 1
 # <a href="https://colab.research.google.com/github/eklavya0948-max/electric-load-forecasting-weather-time/blob/main/LSTM.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -14,8 +11,6 @@ Converted from IPYNB to PY
 # Importing data set
 
 # %% [code] Cell 4
-from google.colab import files
-uploaded = files.upload()
 
 # %% [markdown] Cell 5
 # Importing required libraries
