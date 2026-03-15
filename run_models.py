@@ -1,5 +1,5 @@
 print("Running Linear Regression")
-import linear regression
+import Linear Regression
 
 print("Running LSTM")
-import lstm 
+import LSTM
