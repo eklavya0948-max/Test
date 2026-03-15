@@ -19,10 +19,10 @@ jobs:
       with:
         python-version: "3.10"
 
-    - name: Install dependencies
-      run: |
-        pip install pandas numpy scikit-learn tensorflow matplotlib openpyxl
-
+- name: Install dependencies
+  run: |
+    pip install pandas numpy scikit-learn tensorflow matplotlib seaborn openpyxl
+    
     - name: Run model script
       run: |
         python run_models.py
