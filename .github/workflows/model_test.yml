@@ -1,0 +1,25 @@
+name: Test ML Models
+
+on: [push]
+
+jobs:
+  run-models:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Download repository
+      uses: actions/checkout@v3
+
+    - name: Install Python libraries
+      run: |
+        pip install pandas numpy scikit-learn tensorflow matplotlib notebook
+
+    - name: Run Linear Regression Notebook
+      run: |
+        jupyter nbconvert --to notebook --execute "Linear Regression.ipynb"
+
+    - name: Run LSTM Notebook
+      run: |
+        jupyter nbconvert --to notebook --execute "LSTM.ipynb"
