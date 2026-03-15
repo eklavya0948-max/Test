@@ -1,6 +1,8 @@
-name: Test ML Models
+name: Run Python Models
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   run-models:
@@ -9,17 +11,18 @@ jobs:
 
     steps:
 
-    - name: Download repository
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Install Python libraries
-      run: |
-        pip install pandas numpy scikit-learn tensorflow matplotlib notebook
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
 
-    - name: Run Linear Regression Notebook
+    - name: Install dependencies
       run: |
-        jupyter nbconvert --to notebook --execute "Linear Regression.ipynb"
+        pip install pandas numpy scikit-learn tensorflow matplotlib openpyxl
 
-    - name: Run LSTM Notebook
+    - name: Run model script
       run: |
-        jupyter nbconvert --to notebook --execute "LSTM.ipynb"
+        python run_models.py
