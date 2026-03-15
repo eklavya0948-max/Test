@@ -1,5 +1,5 @@
 print("Running Linear Regression")
-import Linear Regression.py
+import linear_regression.py
 
 print("Running LSTM")
 import LSTM.PY
