@@ -19,9 +19,7 @@ Converted from IPYNB to PY
 # import cleaned dataset
 # 
 
-# %% [code] Cell 4
-from google.colab import files
-uploaded = files.upload()
+# %% [code] Cell 
 
 # %% [code] Cell 5
 # To load data
